@@ -1,0 +1,41 @@
+body{
+   
+    display: flex;
+    height: 100vh;
+    margin: 0;
+
+}
+
+.coluna{
+    flex: 1;
+    height: 100vh;
+}
+
+.esquerda{
+    background-color:rgba(0, 251, 255, 0.719) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.centro{
+    background-color:rgb(255, 0, 170) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.direita{
+    background-color:rgba(230, 0, 255, 0.719) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start{
+    padding: 10px 20px;
+    font-size: 16px;
+
+}
