@@ -1,6 +1,7 @@
 
 body{
     background-color: rgb(255, 0, 170);
+    overflow: hidden;
     display: flex;
     align-items:center;
     justify-content: center;
@@ -8,9 +9,47 @@ body{
     margin: 0;
 
 }
+
+.imagem{
+    position:absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    animation: cair 3s linear infinite;
+}
+
+@keyframes cair{
+
+    0%{
+        top: -100px;
+    }
+    100%{
+        top: 100vh;
+    }
+
+}
+
+
+
 .start{
     
+    position: fixed;
+    width: 150px;
+    height: 50px;
     padding: 10px 20px;
-    font-size: 16px;
+
+    background-color: #fffffff8;
+    color: rgb(255, 0, 170);
+    box-shadow: 1px 1px 5px #fffffff8;
+    border-radius: 30px;
+    text-align: center;
+    border: 0;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    border-color: #fffffff8;
+    font-size: large;
 
 }
