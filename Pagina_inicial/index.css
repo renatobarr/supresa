@@ -6,36 +6,16 @@ body{
     align-items:center;
     justify-content: center;
     height: 100vh;
+    width: 100%;
     margin: 0;
+    position: relative;
 
 }
-
-.imagem{
-    position:absolute;
-    top: -100px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 100px;
-    animation: cair 3s linear infinite;
-}
-
-@keyframes cair{
-
-    0%{
-        top: -100px;
-    }
-    100%{
-        top: 100vh;
-    }
-
-}
-
-
 
 .start{
     
-    position: fixed;
+    position: absolute;
+    z-index: 10;
     width: 150px;
     height: 50px;
     padding: 10px 20px;
@@ -53,3 +33,53 @@ body{
     font-size: large;
 
 }
+
+
+.container_granulado{
+    background-image: url(../imagens/black-sand-beach-with-pebble-tenerife-volcanic-sandy-shore.jpg);
+    overflow: hidden;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    mix-blend-mode: luminosity;
+    opacity: 30%;
+
+}
+
+.container_presentes{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.presente {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    scale: 50%;
+}
+
+
+.imagem1{
+    position:absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    scale: 50%;
+    transform: translateX(-50%) rotate(-45deg)
+}
+
+
