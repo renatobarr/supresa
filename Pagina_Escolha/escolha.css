@@ -7,6 +7,22 @@ body{
 
 }
 
+.container_icone{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.icone{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    scale: 50%;
+}
+
 .imagem{
     position:absolute;
     top: -100px;
@@ -14,53 +30,23 @@ body{
     transform: translateX(-50%);
     width: 100px;
     height: 100px;
-    animation: cair 3s linear infinite;
-}
-
-@keyframes cair{
-
-    0%{
-        top: -100px;
-    }
-    100%{
-        top: 100vh;
-    }
+    transform: translateX(-50%) scale(50%)
 
 }
 
 .coluna{
     flex: 1;
     height: 100vh;
-}
-
-.esquerda{
-    background-color:rgba(0, 251, 255, 0.719) ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    box-shadow: inset 30px 30px 25px rgba(0, 0, 0, 0.5); /* Sombra interna */
     
 }
 
-
-.centro{
-    background-color:rgb(255, 0, 170) ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.direita{
-    background-color:rgba(9, 255, 0, 0.719) ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 button{
-    position: fixed;
+    position: relative;
     width: 150px;
     height: 50px;
     padding: 10px 20px;
+    z-index: 10;
     
     border-radius: 30px;
     text-align: center;
@@ -71,11 +57,63 @@ button{
 
 }
 
+.esquerda{
+    background-color:rgba(0, 251, 255, 0.719) ;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    gap: 10px;
+    
+}
+
 .hytechButtom{
     background-color: #fffffff8;
     color: rgb(0, 251, 255);
     box-shadow: 1px 1px 5px #fffffff8;
 
+}
+
+.dicaHytech{
+    background-color: #fffffff8;
+    color:rgb(0, 251, 255);
+    box-shadow: 1px 1px 5px #fffffff8;
+    width: 50px;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 50%;
+    scale: 70%;
+
+}
+
+.container_BGHyghTech{
+    background-image: url(../imagens/abstract-digital-background-with-connecting-dots-lines.jpg);
+    overflow: hidden;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    position: fixed;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    mix-blend-mode: darken;
+    opacity: 30%;
+
+}
+
+.centro{
+    background-color:rgb(255, 0, 170) ;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    gap: 10px;
 }
 
 .romanticoButtom{
@@ -85,9 +123,92 @@ button{
     
 }
 
+.dicaRomantico{
+    background-color: #fffffff8;
+    color:rgb(255, 0, 170);
+    box-shadow: 1px 1px 5px #fffffff8;
+    width: 50px;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 50%;
+    scale: 70%;
+
+}
+
+.container_BGRomantico{
+    background-image: url(../imagens/preview.jpg);
+    overflow: hidden;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    position: fixed;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    mix-blend-mode: darken;
+    opacity: 30%;
+}
+
+.direita{
+    background-color:rgba(9, 255, 0, 0.719) ;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    gap: 10px;
+}
+
 .materialistaButtom{
     background-color: #fffffff8;
     color: rgb(9, 255, 0);
     box-shadow: 1px 1px 5px #fffffff8;
     
+}
+
+.dicaMaterialista{
+    background-color: #fffffff8;
+    color:rgb(9, 255, 0);
+    box-shadow: 1px 1px 5px #fffffff8;
+    width: 50px;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 50%;
+    scale: 70%;
+
+}
+
+.container_BGHMaterialista{
+    background-image: url(../imagens/13904-NP8E4F.jpg);
+    overflow: hidden;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    mix-blend-mode: darken;
+    opacity: 50%;
+
+}
+
+@keyframes animacaoButao {
+    0%{transform: scale(1);}
+    50%{transform: scale(0.5);}
+    100%{transform: scale(1);}
+    
+}
+
+.animacaoButao{
+    animation: animacaoButao 0.3s ease-in-out;
+
 }
