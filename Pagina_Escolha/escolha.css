@@ -7,37 +7,10 @@ body{
 
 }
 
-.container_icone{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-.icone{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    scale: 50%;
-}
-
-.imagem{
-    position:absolute;
-    top: -100px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 100px;
-    transform: translateX(-50%) scale(50%)
-
-}
-
 .coluna{
     flex: 1;
     height: 100vh;
-    box-shadow: inset 30px 30px 25px rgba(0, 0, 0, 0.5); /* Sombra interna */
+    box-shadow: inset 30px 30px 25px rgba(0, 0, 0, 0.5); 
     
 }
 
@@ -84,6 +57,31 @@ button{
     padding: 10px 20px;
     border-radius: 50%;
     scale: 70%;
+
+}
+
+.boxHyghTech{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 60%;
+    background-color: #fffffff8;
+    color: rgb(0, 251, 255);
+    box-shadow: 1px 1px 5px #fffffff8;
+    width: 130px;
+    height: 100px;
+    padding: 10px 10px; 
+    z-index: 10;
+    
+    border-radius: 30px;
+    text-align: center;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    font-weight: 600;
 
 }
 
@@ -135,6 +133,31 @@ button{
 
 }
 
+.boxRomantico{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 60%;
+    background-color: #fffffff8;
+    color: rgb(255, 0, 170);
+    box-shadow: 1px 1px 5px #fffffff8;
+    width: 130px;
+    height: 100px;
+    padding: 10px 10px; 
+    z-index: 10;
+    
+    border-radius: 30px;
+    text-align: center;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    font-weight: 600;
+
+}
+
 .container_BGRomantico{
     background-image: url(../imagens/preview.jpg);
     overflow: hidden;
@@ -179,6 +202,31 @@ button{
     padding: 10px 20px;
     border-radius: 50%;
     scale: 70%;
+
+}
+
+.boxMaterialista{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 60%;
+    background-color: #fffffff8;
+    color: rgb(9, 255, 0);
+    box-shadow: 1px 1px 5px #fffffff8;
+    width: 130px;
+    height: 100px;
+    padding: 10px 10px; 
+    z-index: 10;
+    
+    border-radius: 30px;
+    text-align: center;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    font-weight: 600;
 
 }
 
