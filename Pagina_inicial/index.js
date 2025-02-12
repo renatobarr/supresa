@@ -70,6 +70,7 @@ for (let i = 0; i < quantidadePresentes; i++) {
 }
 
 function animacaoButao(){
+    
     var button = document.getElementById('start')
     button.classList.remove('animacaoButao');
     void button.offsetWidth;

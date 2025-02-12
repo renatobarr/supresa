@@ -1,7 +1,10 @@
 body{
    
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    width: 100%;
     margin: 0;
     overflow: hidden;
 
@@ -27,6 +30,7 @@ button{
     font-family: 'Montserrat', sans-serif;
     font-size: large;
     font-weight: 800;
+    cursor: pointer;
 
 }
 
@@ -82,8 +86,16 @@ button{
     font-family: 'Montserrat', sans-serif;
     font-size: medium;
     font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    cursor: default;
 
 }
+
+.boxHyghTech.visivel{
+    opacity: 1;
+}
+
 
 .container_BGHyghTech{
     background-image: url(../imagens/abstract-digital-background-with-connecting-dots-lines.jpg);
@@ -155,7 +167,14 @@ button{
     font-family: 'Montserrat', sans-serif;
     font-size: medium;
     font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    cursor: default;
 
+}
+
+.boxRomantico.visivel{
+    opacity: 1;
 }
 
 .container_BGRomantico{
@@ -174,6 +193,7 @@ button{
     background-attachment: fixed;
     mix-blend-mode: darken;
     opacity: 30%;
+    
 }
 
 .direita{
@@ -216,7 +236,7 @@ button{
     background-color: #fffffff8;
     color: rgb(9, 255, 0);
     box-shadow: 1px 1px 5px #fffffff8;
-    width: 130px;
+    width: 250px;
     height: 100px;
     padding: 10px 10px; 
     z-index: 10;
@@ -227,7 +247,14 @@ button{
     font-family: 'Montserrat', sans-serif;
     font-size: medium;
     font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    cursor: default;
 
+}
+
+.boxMaterialista.visivel{
+    opacity: 1;
 }
 
 .container_BGHMaterialista{
@@ -249,14 +276,64 @@ button{
 
 }
 
-@keyframes animacaoButao {
-    0%{transform: scale(1);}
-    50%{transform: scale(0.5);}
-    100%{transform: scale(1);}
+@keyframes animacaoBox {
+    0%{transform: opacity(0);}
+    100%{transform: opacity(1);}
     
 }
 
 .animacaoButao{
     animation: animacaoButao 0.3s ease-in-out;
+
+}
+
+@keyframes animacaoPulse {
+    0%{transform: scale(1);}
+    50%{transform: scale(0.75);}
+    100%{transform: scale(1);}
+    
+}
+
+.animacaoPulse{
+    animation: animacaoPulse 0.3s ease-in-out;
+
+}
+
+.boxConfirmacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    background-color: aliceblue;
+    height: 300px;
+    width: 600px;
+    margin: 50px;
+    padding: 10px;
+    box-shadow: 1px 1px 5px #fffffff8; 
+    z-index: 15;
+    border-radius: 30px;
+    text-align: center;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    font-weight: 600;
+    cursor: default;
+
+}
+
+.tela{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    opacity: 30%;
+    z-index: 12;
 
 }
