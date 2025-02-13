@@ -322,6 +322,33 @@ button{
     cursor: default;
 
 }
+.boxConfirmacao.button{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: end;
+}
+
+.confirmarButton{
+    background-color: #04ff00f8;
+    color:rgb(255, 255, 255);
+    box-shadow: 1px 1px 5px #04ff00f8;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+
+}
+
+.cancelarButton{
+    background-color: #ff0000f8;
+    color:rgb(255, 255, 255);
+    box-shadow: 1px 1px 5px #ff0000f8;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+
+}
+
 
 .tela{
     display: flex;
