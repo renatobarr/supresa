@@ -107,13 +107,20 @@ button{
     width: 100%;
     margin: 0;
     background-repeat: no-repeat;
-    position: fixed;
+    position: absolute;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     mix-blend-mode: darken;
     opacity: 30%;
+    transition: filter 0.3s ease-in-out;
+    z-index: 10;
+    
 
+}
+
+.container_BGHyghTech:hover{
+    filter: brightness(2); 
 }
 
 .centro{
@@ -193,7 +200,12 @@ button{
     background-attachment: fixed;
     mix-blend-mode: darken;
     opacity: 30%;
+    transition: filter 0.3s ease-in-out;
     
+}
+
+.container_BGRomantico:hover{
+    filter: brightness(1.5); 
 }
 
 .direita{
@@ -273,7 +285,13 @@ button{
     background-attachment: fixed;
     mix-blend-mode: darken;
     opacity: 50%;
+    transition: filter 0.3s ease-in-out;
 
+}
+
+
+.container_BGHMaterialista:hover{
+    filter: brightness(1.5); 
 }
 
 
@@ -298,6 +316,32 @@ button{
 
 .animacaoPulse{
     animation: animacaoPulse 0.3s ease-in-out;
+
+}
+
+.boxInformacao{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    background-color: aliceblue;
+    height: 250px;
+    width: 600px;
+    margin: 50px;
+    padding: 10px;
+    box-shadow: 1px 1px 5px #fffffff8; 
+    z-index: 15;
+    border-radius: 30px;
+    text-align: center;
+    border: 0;
+    cursor: default;
+
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
 }
 
@@ -330,6 +374,11 @@ button{
 .animacaoScale {
     transform: scale(1);
     opacity: 1;
+}
+
+.animacaoScaleSaida {
+    transform: scale(0);
+    opacity: 0;
 }
 
 
@@ -402,4 +451,9 @@ button{
 .tela.visivel{
     visibility: visible;
     opacity: 0.4;
+}
+
+.tela.invisivel{
+    visibility: hidden;
+    opacity: 0;
 }
